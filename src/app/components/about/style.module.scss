@@ -16,12 +16,11 @@
     border-radius: 14px;
     
 
-    // img {
-    //   position: relative;
-    //   object-fit: cover;
-    //   border-radius: 14px;
-
-    // }
+    img {
+      position: relative;
+      object-fit: cover;
+      border-radius: 14px;
+    }
   }
 
   .aboutwrap {
@@ -55,9 +54,6 @@
       font-family: pp mori;
       letter-spacing: -.2px;
 
-      .firstdesc {
-        // font-family: baskervville;
-      }
     }
   }
 

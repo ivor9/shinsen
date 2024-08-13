@@ -1,10 +1,8 @@
-'use client'
+'use client';
 import styles from './style.module.scss';
 import Image from 'next/image';
 import { translate } from '../anim.js';
-import { useRef } from 'react';
-import { AnimatePresence, whileInView, motion } from "framer-motion"
-import Slider from '../slider'
+import { AnimatePresence, motion } from "framer-motion"
 
 export default function index() {
 
@@ -17,12 +15,13 @@ export default function index() {
         animate="enter"
         variants={translate}
       >
-        <Slider />
-        {/* <Image 
-          src={`/images/16.webp`}
+        <Image 
+          src={`/images/1.webp`}
+          objectFit='cover'
           fill={true}
           alt="image"
-        /> */}
+        />
+
       </motion.div>
 
       <AnimatePresence>

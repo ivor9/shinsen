@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 import "./globals.css";
 
 
+
 export default function Home() {
   const backgroundImageStyle = {
     backgroundImage: 'url(/images/background.png)',
