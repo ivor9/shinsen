@@ -1,0 +1,25 @@
+.navwrap {
+  display: flex;
+  padding: 64px;
+  width: 100vw;
+  height: 100px;
+  background-color: var(--black);
+
+  .nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px var(--white);
+
+    .leftside {
+      display: flex;
+      gap: 20px;
+    }
+
+    .rightside {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
