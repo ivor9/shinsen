@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import React from "react";
-import { PPMori, Baskervville } from 'next/font/local';
+import { PPMori, Baskervville } from 'next/font';
 
 const inter = Inter({ subsets: ["latin"] });
 
