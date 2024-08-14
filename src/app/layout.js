@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${ppmori.variable} ${baskervville.variable}`}>{children}</body>
+      <body className={ppmori.className}>{children}</body>
     </html>
   );
 }
