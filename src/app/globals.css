@@ -4,12 +4,16 @@
 
 @font-face {
   font-family: mori;
-  src: url(/fonts/mori/PPMori-Regular.ttf);
+  src: url('/fonts/mori/PPMori-Regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: baskervville;
-  src: url(/fonts/baskerville/Baskervville-Regular.otf);
+  src: url('/fonts/baskerville/Baskervville-Regular.otf')format('otf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
