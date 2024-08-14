@@ -1,17 +1,14 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import React from "react";
-import { PPMori, Baskervville } from 'next/font';
+import localFont from 'next/font/local';
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const mori = PPMori({ 
+export const ppmori = localFont({ 
   src: './fonts/PPMori-Regular.woff2',
   subsets: ['latin'],
   display: 'swap',
 })
 
-export const baskervville = Baskervville({ 
+export const baskervville = localFont({ 
   src: './fonts/Baskervville-Regular.otf',
   subsets: ['latin'],
   display: 'swap',
@@ -25,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${ppmori.variable} ${baskervville.variable}`}>{children}</body>
     </html>
   );
 }
