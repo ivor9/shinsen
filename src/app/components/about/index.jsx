@@ -32,7 +32,7 @@ export default function index() {
       >
         <div className={styles.story}>
           <div>新鮮 Shinsen [shin-sen]</div>
-          <div class={styles.fresh1}>&#x2022; Meaning of <span class={styles.fresh2}>fresh</span></div>
+          <div className={styles.fresh1}>&#x2022; Meaning of <span className={styles.fresh2}>fresh</span></div>
 
         </div>
         <div className={styles.about}>
