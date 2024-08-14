@@ -1,15 +1,11 @@
 'use client';
-import Image from 'next/image';
-import Nav from './components/nav';
+import React from 'react';
 import Main from './components/main';
 import About from './components/about';
 import Location from './components/location';
 import Footer from './components/footer';
-import Menu from './menu/page';
 import { useEffect } from 'react';
 import "./globals.css";
-
-
 
 export default function Home() {
   const backgroundImageStyle = {
@@ -42,7 +38,6 @@ export default function Home() {
         <About />
         <Location />
         <Footer />
-        {/* <Menu/> */}
       </div>
     </main>
   );

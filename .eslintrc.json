@@ -5,8 +5,9 @@
   ],
   
   "rules": {
-    "react/no-unescaped-entities": 0,
+    "react/no-unescaped-entities": "off",
     "react/display-name": "off",
-    "@next/next/no-page-custom-font": "off"
+    "@next/next/no-page-custom-font": "off",
+    "react/prop-types": "off"
   }
 }
