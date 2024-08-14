@@ -49,11 +49,20 @@
     .about {
       display: flex;
       flex-direction: column;
-      gap: 4rem;
+      gap: 6rem;
       font-size: 1.6rem;
       font-family: pp mori;
+      // line-height: 200%;
       letter-spacing: -.2px;
 
+      .firstdesc {
+        font-family: baskervville;
+        font-size: 3rem;
+      }
+
+      .scnddesc {
+        line-height: 170%;
+      }
     }
   }
 
@@ -63,14 +72,25 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   .container {
-    padding: 2rem;
-    margin: -22svh 0 6rem 0;
 
     .aboutwrap {
       flex-direction: column;
       gap: 2rem;
+
+      .about {
+        padding-top: 2rem;
+
+      }
     }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 2rem;
+    margin: -22svh 0 6rem 0;
   }
 }
