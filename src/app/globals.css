@@ -4,7 +4,9 @@
 
 @font-face {
   font-family: mori;
-  src: url('/fonts/mori/PPMori-Regular.ttf') format('truetype');
+  src:
+  url('/fonts/mori/PPMori-Regular.woff2') format('woff2'),
+  url('/fonts/mori/PPMori-Regular.ttf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
