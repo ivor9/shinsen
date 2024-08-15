@@ -35,8 +35,14 @@
   }
 }
 
+.container {
+  font-family: pp mori;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
+  font-family: pp mori;
+
   background-color: var(--black);
   height: 100%;
   background-image: url('/background.png');
