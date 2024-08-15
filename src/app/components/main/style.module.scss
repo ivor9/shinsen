@@ -1,8 +1,10 @@
 .body {
   display: flex;
   box-sizing: border-box;
+  overflow: hidden;
   width: 100%;
-  height: 75vh;
+  height: 70vh;
+  margin-top: 2rem;
   padding: 7vw;
   align-items: flex-end;
 
@@ -132,13 +134,14 @@
 @media (max-width: 1000px) {
   .body {
     padding: 2rem;
+    height: 80vh;
 
     .hero {
       flex-direction: column;
-      gap: 7rem;
+      gap: 6rem;
 
       .logowrap {
-        gap: 7rem;
+        gap: 6rem;
         .logosec {
           .shinsen {
             font-size: 16vw;
@@ -202,4 +205,33 @@
 
     }
   }
+}
+
+@media (max-width: 550px) {
+  .body {
+    margin-top: 6rem;
+    padding: 1.2rem;
+
+    .hero {
+
+      .logowrap {
+
+        .logosec {
+
+          .sushiwrap {
+            padding-right: 2.4rem;
+          }
+        }
+      }
+
+      .cta {
+        flex-direction: column;
+      }
+    
+      .infosec {
+        font-size: .8rem;
+      }
+    }
+  }
+
 }

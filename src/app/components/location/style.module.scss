@@ -4,7 +4,7 @@
   width: 100%;
   min-height: fit-content;
   gap: 3rem;
-  padding: 0 7vw 8rem 7vw;
+  padding: 9rem 7vw 9rem 7vw;
 
   .location {
     display: inline-flex;
@@ -92,7 +92,7 @@
 @media (max-width: 1000px) {
   .container {
     height: auto;
-    padding: 0 2rem 6rem 2rem;
+    padding: 6rem 2rem 6rem 2rem;
     flex-direction: column;
 
     .location {
@@ -121,7 +121,14 @@
   }
 }
 
-@media (max-width: 585px) {
+@media (max-width: 550px) {
+  .container {
+    padding: 1.2rem;
+
+    .location {
+      font-size: 1rem;
+    }
+  }
   .infowrap {
     .info {
       .addywrap {

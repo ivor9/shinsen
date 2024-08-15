@@ -7,7 +7,7 @@ export default function index() {
     <div className={styles.container}>
       <div className={styles.copywrap}>
         <div className={styles.text}>
-          <div>Come have a drink & savor excellent sushi with us at ShinSen Sushi & Lounge!</div>
+          Come have a drink & savor excellent sushi with us at ShinSen Sushi & Lounge!
         </div>
       </div>
 
