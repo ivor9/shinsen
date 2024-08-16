@@ -1,21 +1,36 @@
+'use client';
 import "./globals.css";
 import React from "react";
 import localFont from 'next/font/local';
 
 export const ppmori = localFont({ 
-  src: [{
-    path: '../../public/fonts/PPMori-Regular.woff2'
-  }],
-  subsets: ['latin'],
-  display: 'swap',
+  src: [
+    {
+    path: '../../public/fonts/PPMori-Regular.woff2',
+    subsets: ['latin'],
+    display: 'swap',
+    },
+    {
+    path: '../../public/fonts/PPMori-Regular.ttf',
+    subsets: ['latin'],
+    display: 'swap',
+    },  
+],
 })
 
 export const baskervville = localFont({ 
-  src: [{
-    path: '../../public/fonts/Baskervville-Regular.otf'
-  }],
-  subsets: ['latin'],
-  display: 'swap',
+  src: [
+  {
+    path: '../../public/fonts/Baskervville-Regular.otf',
+    subsets: ['latin'],
+    display: 'swap',
+  },
+  {
+    path: '../../public/fonts/Baskervville-Italic.otf',
+    subsets: ['latin'],
+    display: 'swap',
+  },
+],
 })
 
 export const metadata = {
