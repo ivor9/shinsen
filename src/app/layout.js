@@ -1,5 +1,5 @@
 import React from "react";
-import localFont from 'next/font/local';
+import localFont from 'next/font/local'
 
 const ppMori = localFont({ 
   src: [
@@ -43,10 +43,10 @@ export const metadata = {
   description: "",
 };
 
-export default function RootLayout({ children }) {
+export default function MyApp({ Component, pageProps }) {
   return (
-    <html className={ppMori.className} lang="en">
-      <body>{children}</body>
-    </html>
-  );
+    <main className={ppMori.className}>
+      <Component {...pageProps} />
+    </main>
+  )
 }
