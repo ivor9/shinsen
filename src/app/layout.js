@@ -1,7 +1,7 @@
 import React from "react";
-import localFont from 'next/font/local'
+import localFont from 'next/font/local';
 
-export const ppmori = PPMori({ 
+const ppMori = localFont({ 
   src: [
     {
     path: '../../public/fonts/PPMori-Regular.woff2',
@@ -21,7 +21,7 @@ export const ppmori = PPMori({
   ],
 })
 
-export const baskervville = Baskervville({ 
+const baskervville = localFont({ 
   src: [
   {
     path: '../../public/fonts/Baskervville-Regular.otf',
