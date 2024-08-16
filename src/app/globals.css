@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: pp mori;
   src:
   url('/fonts/mori/PPMori-Regular.woff2') format('woff2'),
@@ -16,7 +16,7 @@
   src: url('/fonts/baskerville/Baskervville-Regular.otf')format('opentype');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 :root {
   --black: #161618;
