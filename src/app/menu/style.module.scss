@@ -71,7 +71,7 @@
     flex-direction: column;
     font-family: pp mori;
     height: 60vh;
-    width: 18%;
+    width: 16%;
     justify-content: center;
     gap: 1rem;
     margin-right: 2rem;
@@ -113,21 +113,21 @@
 
 }
 
-@media (max-width: 1570px) {
+@media (max-width: 1670px) {
   .container {
 
     .menutext {
       position: relative;
-      padding: 10rem 0 2rem 0;
+      padding: 14rem 0 2rem 0;
       width: auto;
-      height: 30vh;
+      height: 40vh;
 
       .menu {
       }
     }
 
     .menusec {
-      padding: 0 0 9rem 0;
+      padding: 2rem 0 9rem 0;
       flex-wrap: wrap;
 
       .imgwrap {
@@ -163,13 +163,25 @@
     }
 
     .menutext {
-      height: 24vh;
-
+      height: 34vh;
+      padding-bottom: 6rem;
     }
     
     .menusec {
       .imgwrap {
         max-height: 154vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 1.2rem;
+    .navwrap {
+      
+      .nav {
+        padding: 1.2rem;
       }
     }
   }
