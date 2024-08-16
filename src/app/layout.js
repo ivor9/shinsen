@@ -24,13 +24,13 @@ const ppMori = localFont({
 const baskervville = localFont({ 
   src: [
   {
-    path: '../public/fonts/Baskervville-Regular.otf',
+    path: '../../public/fonts/Baskervville-Regular.otf',
     subsets: ['latin'],
     display: 'swap',
     style: 'normal'
   },
   {
-    path: '../public/fonts/Baskervville-Italic.otf',
+    path: '../../public/fonts/Baskervville-Italic.otf',
     subsets: ['latin'],
     display: 'swap',
     style: 'italic'
