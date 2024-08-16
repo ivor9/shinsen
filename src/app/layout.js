@@ -1,7 +1,7 @@
 import React from "react";
 import localFont from 'next/font/local'
 
-const ppMori = localFont({ 
+export const ppMori = localFont({ 
   src: [
     {
     path: '../../public/fonts/PPMori-Regular.woff2',
@@ -21,7 +21,7 @@ const ppMori = localFont({
   ],
 })
 
-const baskervville = localFont({ 
+export const baskervville = localFont({ 
   src: [
   {
     path: '../../public/fonts/Baskervville-Regular.otf',
@@ -43,10 +43,10 @@ export const metadata = {
   description: "",
 };
 
-export default function MyApp({ Component, pageProps }) {
+export default function RootLayout({ children }) {
   return (
-    <main className={ppMori.className}>
-      <Component {...pageProps} />
-    </main>
-  )
+    <html className={ppMori.className} lang="en">
+      <body>{children}</body>
+    </html>
+  );
 }
