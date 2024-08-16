@@ -2,18 +2,23 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  overflow: hidden;
+  // overflow: hidden;
   .embla_viewport {
 
     .embla_container {
       display: flex;
+      gap: 3rem;
       .embla_slide {
         flex: 0 0 100%;
-        // max-width: 100%;
-        height: 50vw;
+        width: 100%;
+        // height: 50vw;
         border-radius: 14px;
-        img {
+
+        .slide {
+          aspect-ratio: 16/9;
+          position: relative;
           border-radius: 14px;
+          object-fit: cover;
         }
       }
       

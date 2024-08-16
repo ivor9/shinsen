@@ -20,29 +20,20 @@ export default function EmblaCarousel() {
       <div className={styles.embla_viewport} ref={emblaRef}>
         <div className={styles.embla_container}>
           <div className={styles.embla_slide}>
-            <Image 
-            src={`/images/1.webp`}
-            objectFit="cover"
-            fill={true}
-            alt="image"
-            />
+            <img className={styles.slide} src="../images/1.webp">
+            </img>
           </div>
+
           <div className={styles.embla_slide}>
-            <Image 
-            src={`/images/7.webp`}
-            objectFit="cover"
-            fill={true}
-            alt="image"
-            />
+            <img className={styles.slide} src="../images/3.webp">
+            </img>
           </div>
+
           <div className={styles.embla_slide}>
-            <Image 
-            src={`/images/5.webp`}
-            objectFit="cover"
-            fill={true}
-            alt="image"
-            />
+            <img className={styles.slide} src="../images/6.webp">
+            </img>
           </div>
+
         </div>
       </div>
 
