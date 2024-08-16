@@ -8,7 +8,6 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function index() {
 
   return (
-    <main className={ppMori.className}>
     <div className={styles.container}>
 
       <motion.div className={styles.imgwrap}
@@ -54,6 +53,6 @@ export default function index() {
       ></motion.div>
       </AnimatePresence>
     </div>
-  </main>
+
   )
 }
