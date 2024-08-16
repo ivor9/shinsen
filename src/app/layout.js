@@ -5,13 +5,13 @@ import localFont from 'next/font/local';
 const ppmori = localFont({ 
   src: [
     {
-    path: '../../public/fonts/PPMori-Regular.woff2',
+    path: '../public/fonts/PPMori-Regular.woff2',
     subsets: ['latin'],
     display: 'swap',
     style: 'normal'
     },
     {
-    path: '../../public/fonts/PPMori-Regular.ttf',
+    path: '../public/fonts/PPMori-Regular.ttf',
     subsets: ['latin'],
     display: 'swap',
     style: 'normal'
@@ -23,7 +23,7 @@ const ppmori = localFont({
 const baskervville = localFont({ 
   src: [
   {
-    path: '../public/fonts/Baskervville-Regular.otf',
+    path: 'shinsen\public\fonts\Baskervville-Regular.otf',
     subsets: ['latin'],
     display: 'swap',
     style: 'normal'
