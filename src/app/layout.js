@@ -1,18 +1,19 @@
-import "./globals.css";
 import React from "react";
 import localFont from 'next/font/local';
 
-const ppmori = localFont({ 
+const ppMori = localFont({ 
   src: [
     {
     path: '../public/fonts/PPMori-Regular.woff2',
     subsets: ['latin'],
+    weight: '400',
     display: 'swap',
     style: 'normal'
     },
     {
     path: '../public/fonts/PPMori-Regular.ttf',
     subsets: ['latin'],
+    weight: '400',
     display: 'swap',
     style: 'normal'
 
@@ -20,7 +21,7 @@ const ppmori = localFont({
   ],
 })
 
-const Baskervville = localFont({ 
+const baskervville = localFont({ 
   src: [
   {
     path: '../public/fonts/Baskervville-Regular.otf',
@@ -44,7 +45,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className={ppmori.className} lang="en">
+    <html className={ppMori.className} lang="en">
       <body>{children}</body>
     </html>
   );
