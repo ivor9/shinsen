@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function index() {
 
   return (
+    <main className={ppMori.className}>
     <div className={styles.container}>
 
       <motion.div className={styles.imgwrap}
@@ -38,9 +39,9 @@ export default function index() {
         <div className={styles.about}>
           <div className={styles.firstdesc}>Sushi is only as good as its ingredients. Therefore, we import our fish from all over the globe and use top-quality ingredients, as we only deliver the best for our customers.
           </div>
-          <div className={styles.scnddesc}>Shinsen Sushi & Lounge is a family-owned and operated business that is located by the beautiful Vancouver Waterfront. Expect to an embark on a journey of culinary excellence as our Master Chefs curate seasonal signature rolls with emphasis on bringing together traditional Japanese techniques to create a unique experience for every guest. With our hospitality and pride, you will feel like you are right at home, no matter where you come from. Our bar features some of the finest Japanese Whiskey and Sake along with highlighting signature cocktails like our "Smoked Shinsen Old Fashion". We welcome you to make memories here with us while enjoying friendly service and the freshest ingredients. 
+          <p className={styles.scnddesc}>Shinsen Sushi & Lounge is a family-owned and operated business that is located by the beautiful Vancouver Waterfront. Expect to an embark on a journey of culinary excellence as our Master Chefs curate seasonal signature rolls with emphasis on bringing together traditional Japanese techniques to create a unique experience for every guest. With our hospitality and pride, you will feel like you are right at home, no matter where you come from. Our bar features some of the finest Japanese Whiskey and Sake along with highlighting signature cocktails like our "Smoked Shinsen Old Fashion". We welcome you to make memories here with us while enjoying friendly service and the freshest ingredients. 
 
-          </div>
+          </p>
         </div>
       </motion.div>
       </AnimatePresence>
@@ -53,6 +54,6 @@ export default function index() {
       ></motion.div>
       </AnimatePresence>
     </div>
-
+  </main>
   )
 }
