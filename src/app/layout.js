@@ -17,13 +17,13 @@ const ppmori = localFont({
     style: 'normal'
 
     },  
-],
+  ],
 })
 
-const baskervville = localFont({ 
+const Baskervville = localFont({ 
   src: [
   {
-    path: 'shinsen\public\fonts\Baskervville-Regular.otf',
+    path: '../public/fonts/Baskervville-Regular.otf',
     subsets: ['latin'],
     display: 'swap',
     style: 'normal'
@@ -44,8 +44,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={ppmori.className}>{children}</body>
+    <html className={ppmori.className} lang="en">
+      <body>{children}</body>
     </html>
   );
 }
