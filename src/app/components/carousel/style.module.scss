@@ -1,0 +1,27 @@
+.embla {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden;
+  .embla_viewport {
+
+    .embla_container {
+      display: flex;
+      .embla_slide {
+        flex: 0 0 100%;
+        // max-width: 100%;
+        height: 50vw;
+        border-radius: 14px;
+        img {
+          border-radius: 14px;
+        }
+      }
+      
+    }
+  }
+  .buttons {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+  }
+}

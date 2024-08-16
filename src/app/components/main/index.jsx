@@ -47,7 +47,7 @@ export default function index() {
             <p>Hours ↓</p>
             <div>
               <p>4P — 9:30P</p>
-              <p>Wednedsay - Sunday</p>
+              <p>Wednesday - Sunday</p>
             </div>
           </div>
 

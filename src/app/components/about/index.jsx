@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 import Image from 'next/image';
+import Carousel from '../carousel';
 import { translate } from "../anim.js";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -15,12 +16,13 @@ export default function index() {
         animate="enter"
         variants={translate}
       >
-        <Image 
+        <Carousel />
+        {/* <Image 
           src={`/images/1.webp`}
           objectFit="cover"
           fill={true}
           alt="image"
-        />
+        /> */}
 
       </motion.div>
 
