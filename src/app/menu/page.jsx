@@ -54,7 +54,7 @@ export default function Menu () {
           >
             <div className={styles.menu}>Menu</div>
             <div className={styles.desc}>Some items are subject
-            to change due to season</div>
+            to change due to season & availability</div>
           </motion.div>
           
           <div className={styles.menusec}>
