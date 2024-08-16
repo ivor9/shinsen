@@ -4,14 +4,14 @@ import localFont from 'next/font/local';
 const ppMori = localFont({ 
   src: [
     {
-    path: '../public/fonts/PPMori-Regular.woff2',
+    path: '../../public/fonts/PPMori-Regular.woff2',
     subsets: ['latin'],
     weight: '400',
     display: 'swap',
     style: 'normal'
     },
     {
-    path: '../public/fonts/PPMori-Regular.ttf',
+    path: '../../public/fonts/PPMori-Regular.ttf',
     subsets: ['latin'],
     weight: '400',
     display: 'swap',
