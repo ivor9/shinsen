@@ -182,6 +182,24 @@
       
       .nav {
         padding: 1.2rem;
+
+        .homebutton, .reservebutton {
+          padding: 24px 50px 24px 50px;
+
+        }
+      }
+    }
+
+    .menutext {
+
+      .menu {
+        font-size: 3rem;
+        letter-spacing: -2px;
+      }
+  
+      .desc {
+        font-size: 1.1rem;
+        text-wrap: balance;
       }
     }
   }
