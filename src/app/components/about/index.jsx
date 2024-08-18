@@ -33,7 +33,7 @@ import localFont from 'next/font/local';
 export default function index() {
 
   return (
-    <div className={`${ppMori.variable} ${styles.container}`}>
+    <div className={`${styles.container}`}>
 
       <motion.div className={styles.imgwrap}
         initial="initial"
