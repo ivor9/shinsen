@@ -26,7 +26,7 @@ export default function Menu () {
   }, [])
 
   return (
-    <main style={backgroundImageStyle}>
+    <main>
       <motion.div className={styles.container}
         initial={{y: 0,
           opacity: 0}}

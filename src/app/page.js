@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <main>
-      <div style={backgroundImageStyle}>
+      <div>
         <Main />
         <About />
         <Location />
