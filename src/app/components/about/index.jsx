@@ -12,7 +12,7 @@ import localFont from 'next/font/local';
 // const ppMori = localFont({ 
 //   src: [
 //     {
-//     path: '../../public/fonts/PPMori-Regular.woff2',
+//     path: '../../../shinsen/public/fonts/PPMori-Regular.woff2',
 //     subsets: ['latin'],
 //     weight: '400',
 //     display: 'swap',
@@ -33,7 +33,7 @@ import localFont from 'next/font/local';
 export default function index() {
 
   return (
-    <div className={`${styles.container}`}>
+    <div className={` ${styles.container}`}>
 
       <motion.div className={styles.imgwrap}
         initial="initial"
