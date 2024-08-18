@@ -1,12 +1,21 @@
 'use client';
 import React from 'react'
 import styles from './style.module.scss';
+import { Baskervville } from 'next/font/google';
+
+const baskervville = Baskervville({ 
+  subsets: ['latin'],
+  variable: '--font-baskerville',
+  display: 'swap',
+  style: 'normal',
+  weight: '400'
+})
 
 export default function index() {
   return (
     <div className={styles.container}>
       <div className={styles.copywrap}>
-        <div className={styles.text}>
+        <div className={`${styles.text} ${baskervville.className}`}>
           Come have a drink & savor excellent sushi with us at ShinSen Sushi & Lounge!
         </div>
       </div>

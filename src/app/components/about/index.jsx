@@ -6,29 +6,6 @@ import Carousel from '../carousel';
 import { translate } from "../anim.js";
 import { AnimatePresence, motion } from 
 "framer-motion";
-import localFont from 'next/font/local';
-
-
-// const ppMori = localFont({ 
-//   src: [
-//     {
-//     path: '../../../shinsen/public/fonts/PPMori-Regular.woff2',
-//     subsets: ['latin'],
-//     weight: '400',
-//     display: 'swap',
-//     style: 'normal'
-//     },
-//     // {
-//     // path: './public/fonts/PPMori-Regular.ttf',
-//     // subsets: ['latin'],
-//     // weight: '400',
-//     // display: 'swap',
-//     // style: 'normal'
-
-//     // },  
-//   ],
-// })
-
 
 export default function index() {
 
