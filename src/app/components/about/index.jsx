@@ -4,12 +4,36 @@ import styles from "./style.module.scss";
 import Image from 'next/image';
 import Carousel from '../carousel';
 import { translate } from "../anim.js";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from 
+"framer-motion";
+import localFont from 'next/font/local';
+
+
+// const ppMori = localFont({ 
+//   src: [
+//     {
+//     path: '../../public/fonts/PPMori-Regular.woff2',
+//     subsets: ['latin'],
+//     weight: '400',
+//     display: 'swap',
+//     style: 'normal'
+//     },
+//     // {
+//     // path: './public/fonts/PPMori-Regular.ttf',
+//     // subsets: ['latin'],
+//     // weight: '400',
+//     // display: 'swap',
+//     // style: 'normal'
+
+//     // },  
+//   ],
+// })
+
 
 export default function index() {
 
   return (
-    <div className={styles.container}>
+    <div className={`${ppMori.variable} ${styles.container}`}>
 
       <motion.div className={styles.imgwrap}
         initial="initial"

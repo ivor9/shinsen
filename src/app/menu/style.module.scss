@@ -4,11 +4,10 @@
   height: fit-content;
   box-sizing: border-box;
   // width: 100vw;
-  padding: 0 7vw 0 7vw;
+  padding: 0 10vw 0 10vw;
 
   .navwrap {
     display: flex;
-    z-index: 2;
     position: relative;
     box-sizing: border-box;
 
@@ -20,9 +19,10 @@
       left: 0;
       position: fixed;
       font-family: pp mori;
-      z-index: 2;
-      background-color: linear-gradient(160deg, #2B303D 0%, #191C24 100%);;
-      padding: 3rem 7vw 3rem 7vw;
+      z-index: 99;
+      background-color: linear-gradient(160deg, #2B303D 0%, #191C24 100%);
+      background: solid;
+      padding: 3rem 10vw 3rem 10vw;
 
       .homebutton {
         display: flex;
