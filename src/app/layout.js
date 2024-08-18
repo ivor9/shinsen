@@ -1,6 +1,7 @@
 import React from "react";
 import './globals.css';
 import localFont from 'next/font/local';
+import { Baskervville } from 'next/font/google';
 
 const ppMori = localFont({ 
   src: [
@@ -22,21 +23,12 @@ const ppMori = localFont({
   ],
 })
 
-const baskervville = localFont({ 
-  src: [
-  {
-    path: '../../public/fonts/Baskervville-Regular.otf',
-    subsets: ['latin'],
-    display: 'swap',
-    style: 'normal'
-  },
-  {
-    path: '../../public/fonts/Baskervville-Italic.otf',
-    subsets: ['latin'],
-    display: 'swap',
-    style: 'italic'
-  },
-],
+const baskervville = Baskervville({ 
+  subsets: ['latin'],
+  variable: '--font-baskerville',
+  display: 'swap',
+  style: 'normal',
+  weight: '400'
 })
 
 export const metadata = {
@@ -46,7 +38,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className={ppMori.className} lang="en">
+    <html className={`${ppMori.variable} ${baskervville.variable} font-sans`} lang="en">
       <body>{children}</body>
     </html>
   );

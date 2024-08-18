@@ -9,7 +9,7 @@ import { AnimatePresence, whileInView, motion } from "framer-motion"
 
 export default function Menu () {
   const backgroundImageStyle = {
-    backgroundImage: 'url(/images/background.png)',
+    backgroundImage: 'url(/images/blue.webp)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundAttachment: 'fixed',

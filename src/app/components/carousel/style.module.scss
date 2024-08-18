@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  // overflow: hidden;
+  box-sizing: border-box;
+  max-width: fit-content;
+  overflow: hidden;
+
   .embla_viewport {
 
     .embla_container {
@@ -31,7 +34,6 @@
     justify-content: space-between;
     padding-bottom: 1.4rem;
 
-
     .prev, .next {
       display: flex;
       align-items: center;
@@ -45,11 +47,9 @@
     .prev:hover, .next:hover {
       background-color: var(--gold);
     }
-
     .prev {
       padding-left: 1rem;
     }
-
     .next {
       padding-left: 1.1rem;
     }

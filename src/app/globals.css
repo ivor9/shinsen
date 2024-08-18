@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
+@font-face {
   font-family: pp mori;
   src:
   url('/fonts/mori/PPMori-Regular.woff2') format('woff2'),
@@ -11,7 +11,7 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: baskervville;
   src: url('/fonts/baskerville/Baskervville-Regular.otf')format('opentype');
   font-weight: normal;
@@ -43,7 +43,8 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: var(--black);
   height: 100%;
-  background-image: url('/background.png');
+  /* background-image: url('/background.png'); */
+  background-image: var(--black);
   background-attachment: fixed;
   box-sizing: border-box;
 }

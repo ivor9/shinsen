@@ -57,11 +57,12 @@
         .menubutton {
           display: flex;
           letter-spacing: -.2px;
+          border: 1px var(--white) solid;
           align-items: center;
           justify-content: center;
           padding: 24px 68px 24px 68px;
           border-radius: 200px;
-          background-color: var(--buttongray);
+          // background-color: var(--buttongray);
           transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
           cursor: pointer;
         }
