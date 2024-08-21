@@ -18,8 +18,8 @@
 }
 
 :root {
-  --black: #161618;
   --white: #E7E7EB;
+  --black: #161618;
   --gold: #CBAA56;
   --goldhovered: #FFD465;
   --green: #65946C;
@@ -39,10 +39,9 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--white);
   background-color: var(--black);
   height: 100%;
-  /* background-image: url('/background.png'); */
   background: linear-gradient(160deg, #2B303D 0%, #191C24 100%);
   background-attachment: fixed;
   box-sizing: border-box;

@@ -46,7 +46,7 @@ export default function Menu () {
           </div>
 
         </div>
-
+        
         <div className={styles.menuwrap}>
 
           <motion.div className={styles.menutext}

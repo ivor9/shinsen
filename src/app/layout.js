@@ -38,7 +38,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className={`${ppMori.variable} ${baskervville.variable} font-sans`} lang="en">
+    <html className={`${ppMori.variable} ${baskervville.variable}`} lang="en">
       <body>{children}</body>
     </html>
   );
