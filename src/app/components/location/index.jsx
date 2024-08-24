@@ -16,7 +16,7 @@ export default function index() {
     >
 
       <div className={styles.location}>
-        <div>Location</div>
+        <div>Our location</div>
       </div>
 
       <div className={styles.infowrap}>
