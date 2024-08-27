@@ -1,11 +1,14 @@
 'use client';
 import React from 'react';
+import Preloader from './components/preloader';
 import Main from './components/main';
 import About from './components/about';
 import Location from './components/location';
 import Footer from './components/footer';
-import { useEffect } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import "./globals.css";
+import { Island_Moments } from 'next/font/google';
 
 export default function Home() {
   const backgroundImageStyle = {
@@ -21,11 +24,18 @@ export default function Home() {
     alignItems: 'center',
   };
 
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect ( () => {
     (
       async () => {
         const LocomotiveScroll = (await import ('locomotive-scroll')).default;
         const locomotivescroll = new LocomotiveScroll();
+
+        setTimeout( () => {
+          setIsLoading(false);
+          document.body.style.cursor = 'default'
+        }, 1400)
       }
     ) ()
 
@@ -36,6 +46,11 @@ export default function Home() {
   return (
     <main>
       <div>
+        <AnimatePresence mode="wait">
+          {
+            isLoading && <Preloader />
+          }
+        </AnimatePresence>
         <Main />
         <About />
         <Location />
