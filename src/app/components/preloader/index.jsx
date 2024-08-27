@@ -9,14 +9,14 @@ export default function index () {
   const phrase = "SUSHI & LOUNGE";
 
   return (
-    <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
+    <motion.div key={index} variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
       <div className={styles.logowrap}>
         <motion.p variants={opacity} initial="initial" animate="enter" key={index} className={styles.shinsen}>ShinSen</motion.p>
 
         <p className={styles.lounge}>
           {
             phrase.split(" ").map( (word, index) => {
-              return <span className={styles.text}><motion.span variants={slideDown} initial="initial" animate="enter" key={index}>{word}</motion.span></span>
+              return <span key={index} className={styles.text}><motion.span variants={slideDown} initial="initial" animate="enter" key={index}>{word}</motion.span></span>
             })
           }
         </p>
