@@ -1,6 +1,7 @@
 'use client';
 import styles from './style.module.scss';
 import { motion, useInView } from 'framer-motion';
+import React from 'react';
 import { slideUp, slideDown, background, opacity } from './anim';
 
 export default function index () {
