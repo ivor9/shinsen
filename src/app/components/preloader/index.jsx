@@ -11,7 +11,7 @@ export default function index () {
   return (
     <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
       <div className={styles.logowrap}>
-        <motion.p variants={opacity} initial="initial" animate="enter" className={styles.shinsen}>ShinSen</motion.p>
+        <motion.p variants={opacity} initial="initial" animate="enter" key={index} className={styles.shinsen}>ShinSen</motion.p>
 
         <p className={styles.lounge}>
           {
