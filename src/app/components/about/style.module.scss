@@ -12,8 +12,8 @@
   box-sizing: border-box;
   // margin: -24svh 0 6rem 0;
   width: 100%;
-  gap: 8rem;
-  padding: 0 10vw 0 10vw;
+  gap: 4rem;
+  padding: 0 10vw 4rem 10vw;
   
   .imgwrap {
     // display: flex;
@@ -70,7 +70,8 @@
 
   .line {
     display: flex;
-    border: solid 1px #202531;
+    border: solid 1px #25293b;
+    border-radius: 10px;
   }
 }
 
@@ -113,5 +114,6 @@
 @media (max-width: 550px) {
   .container {
     padding: 0 1rem 1rem 1rem;
+    gap: 2rem;
   }
 }

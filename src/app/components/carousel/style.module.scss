@@ -14,14 +14,14 @@
       .embla_slide {
         flex: 0 0 100%;
         width: 100%;
-        border-radius: 14px;
+        border-radius: 8px;
 
         .slide {
           aspect-ratio: 16/9;
           position: relative;
           height: 52vw;
 
-          border-radius: 14px;
+          border-radius: 8px;
           object-fit: cover;
         }
       }

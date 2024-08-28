@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./style.module.scss";
 import Image from 'next/image';
 import Carousel from '../carousel';
-import { translate } from "../anim.js";
+import { translate, translate2 } from "../anim.js";
 import { AnimatePresence, motion } from 
 "framer-motion";
 
@@ -15,7 +15,7 @@ export default function index() {
       <motion.div className={styles.imgwrap}
         initial="initial"
         animate="enter"
-        variants={translate}
+        variants={translate2}
       >
         <Carousel />
         {/* <Image 
@@ -28,6 +28,7 @@ export default function index() {
       </motion.div>
 
       <AnimatePresence>
+
       <motion.div className={styles.aboutwrap}
             initial="initial"
             whileInView="enter"
