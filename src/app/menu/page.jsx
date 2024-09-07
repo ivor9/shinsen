@@ -53,35 +53,49 @@ export default function Menu () {
 
           >
             <div className={styles.menu}>Menu</div>
-            <div className={styles.desc}>Some items are subject
+            <div className={styles.desc}>Items are subject
             to change due to season & availability</div>
           </motion.div>
           
           <div className={styles.menusec}>
             <div className={styles.imgwrap}>
                 <Image 
-                  src={`/images/menu1.jpg`}
+                  src={`/images/menu1.png`}
                   fill={true}
                   alt="image"
                 />
             </div>
             <div className={styles.imgwrap}>
                 <Image 
-                  src={`/images/menu2.jpg`}
+                  src={`/images/menu2.png`}
                   fill={true}
                   alt="image"
                 />
             </div>
             <div className={styles.imgwrap}>
                 <Image 
-                  src={`/images/menu3.jpg`}
+                  src={`/images/menu3.png`}
                   fill={true}
                   alt="image"
                 />
             </div>
             <div className={styles.imgwrap}>
                 <Image 
-                  src={`/images/menu4.jpg`}
+                  src={`/images/menu4.png`}
+                  fill={true}
+                  alt="image"
+                />
+            </div>
+            <div className={styles.imgwrap}>
+                <Image 
+                  src={`/images/menu5.png`}
+                  fill={true}
+                  alt="image"
+                />
+            </div>
+            <div className={styles.imgwrap}>
+                <Image 
+                  src={`/images/menu6.png`}
                   fill={true}
                   alt="image"
                 />
