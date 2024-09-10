@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { opacity, translate2, height, background } from '../anim.js';
 
 
-export default function index() {
+export default function Index() {
 
   const [isActive, setIsActive] = useState(false);
 
