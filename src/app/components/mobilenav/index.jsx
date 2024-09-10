@@ -10,7 +10,7 @@ export default function Index() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <motion.div initial="initial" animate="enter" variants={translate2} key={index} div className={styles.container}>
+    <motion.div initial="initial" animate="enter" variants={translate2} div className={styles.container}>
       <div onMouseDown={() => {setIsActive(!isActive)}} className={styles.menuwrap}>
         <div className={`${styles.burger} ${isActive ? styles.burgerActive:""}`}>
 
