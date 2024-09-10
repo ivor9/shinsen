@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import { React, useState } from 'react';
 import styles from "./style.module.scss";
 import { motion, AnimatePresence } from 'framer-motion';
 import { opacity, translate2, height, background } from '../anim.js';
