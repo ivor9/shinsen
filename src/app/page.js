@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 import Preloader from './components/preloader';
+import Nav from './components/nav'
+import Mobilenav from './components/mobilenav';
 import Main from './components/main';
 import About from './components/about';
 import Location from './components/location';
@@ -51,6 +53,8 @@ export default function Home() {
             isLoading && <Preloader />
           }
         </AnimatePresence>
+        <Nav />
+        <Mobilenav />
         <Main />
         <About />
         <Location />

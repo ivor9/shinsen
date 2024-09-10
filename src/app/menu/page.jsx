@@ -1,6 +1,7 @@
 'use client'
 import React from "react";
 import styles from './style.module.scss';
+import Nav from '../components/nav'
 import Image from 'next/image';
 import Footer from '../components/footer';
 import { useEffect } from 'react';
@@ -8,13 +9,6 @@ import { translate } from '../components/anim.js';
 import { AnimatePresence, whileInView, motion } from "framer-motion"
 
 export default function Menu () {
-  const backgroundImageStyle = {
-    backgroundImage: 'url(/images/blue.webp)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundAttachment: 'fixed',
-  };
-
   useEffect ( () => {
     (
       async () => {
@@ -27,6 +21,7 @@ export default function Menu () {
 
   return (
     <main>
+      <Nav />
       <motion.div className={styles.container}
         initial={{y: 0,
           opacity: 0}}
@@ -34,16 +29,6 @@ export default function Menu () {
         variants={translate}
       >
         <div className={styles.navwrap}>
-          <div className={styles.nav}>
-            <a className={styles.homebutton} href="/">
-              <div>Home</div>
-            </a>
-            
-            <a className={styles.reservebutton} href="https://www.opentable.com/r/shinsen-sushi-reservations-portland?restref=1362088&lang=en-US&ot_source=Restaurant%20website" target="_blank" rel="noopener noreferrer">
-              <div>Reserve a table</div>
-              <div>→</div>
-            </a>
-          </div>
 
         </div>
         

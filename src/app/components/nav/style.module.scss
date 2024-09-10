@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 10rem;
+  position: sticky;
+  background-color: none;
+  padding: 3.6rem 10vw 0 10vw;
+  width: 100%;
+  overflow: hidden;
+
+  .textwrap {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: baskervville;
+      font-size: 2.3rem;
+      padding-bottom: 4px;
+    }
+
+    .leftwrap, .rightwrap {
+      display: flex;
+      min-width: 270px;
+      align-items: center;
+      font-family: pp mori;
+      font-size: 1.2rem;
+      font-weight: 500;
+      gap: 2.2rem;
+    }
+    .rightwrap {
+      justify-content: flex-end;
+    }
+  }
+
+  .line {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 3rem 2rem 0 2rem;
+    height: 9rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    display: none;
+    visibility: collapse;
+  }
+}
