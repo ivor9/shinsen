@@ -36,6 +36,7 @@
       font-size: 1.6rem;
       gap: .2rem;
       flex-direction: column;
+      justify-content: space-between;
       min-width: fit-content;
 
       .fresh1 {
@@ -46,6 +47,26 @@
         font-family: baskerville;
         font-style: italic;
       }
+
+      .aboutus {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        width: fit-content;
+        font-size: 1.2rem;
+        font-family: pp mori;
+        padding: 24px 68px 24px 68px;
+        border: solid 1px var(--gold);
+        border-radius: 200px;
+        gap: 12px;
+        transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
+        cursor: pointer;
+      }
+      
+      .aboutus:hover {
+        background-color: var(--goldhovered);
+        color: var(--black);
+      }
     }
 
     .about {
@@ -54,12 +75,14 @@
       gap: 6rem;
       font-size: 1.6rem;
       font-family: pp mori;
+      
       // line-height: 200%;
       letter-spacing: -.2px;
 
       .firstdesc {
+        margin-top: -8px;
         font-family: baskervville;
-        font-size: 3rem;
+        font-size: 3.4rem;
       }
 
       .scnddesc {
@@ -67,20 +90,23 @@
       }
     }
   }
-
-  .line {
-    display: flex;
-    border: solid 1px #25293b;
-    border-radius: 10px;
-  }
 }
 
 @media (max-width: 1300px) {
   .container {
 
+    
     .aboutwrap {
       flex-direction: column;
       gap: 2rem;
+
+      .story {
+        flex-direction: row;
+
+        .aboutus {
+          font-size: 1.1rem;
+        }
+      }
 
       .about {
         padding-top: 2rem;
@@ -97,6 +123,22 @@
     margin-top: 4rem;
     gap: 4rem;
     .aboutwrap {
+
+      .story {
+        font-size: 1.1rem;
+        
+        .fresh1 {
+          font-size: 1.3rem;
+
+        }
+
+        .aboutus {
+          padding: 20px 48px 20px 48px;
+
+
+        }
+      }
+
       .about {
         .firstdesc {
           font-size: 2.4rem;
@@ -115,5 +157,9 @@
   .container {
     padding: 0 1rem 1rem 1rem;
     gap: 2rem;
+
+    .aboutwrap {
+      gap: 2rem;
+    }
   }
 }

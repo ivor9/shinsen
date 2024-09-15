@@ -5,12 +5,15 @@ import Nav from './components/nav'
 import Mobilenav from './components/mobilenav';
 import Main from './components/main';
 import About from './components/about';
+import Specials from './components/specials';
+import Menusection from './components/menusection';
 import Location from './components/location';
 import Footer from './components/footer';
 import { AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import "./globals.css";
 import { Island_Moments } from 'next/font/google';
+import Menu from './menu/page';
 
 export default function Home() {
   const backgroundImageStyle = {
@@ -56,6 +59,8 @@ export default function Home() {
         <Nav />
         <Mobilenav />
         <Main />
+        <Specials />
+        <Menusection />
         <About />
         <Location />
         <Footer />

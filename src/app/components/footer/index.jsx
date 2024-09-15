@@ -25,6 +25,9 @@ export default function index() {
       <div className={styles.footwrap}>
         <div className={styles.footnav}>
           <div className={styles.menuwrap}>
+            <a className={styles.homebutton} href="/">
+              <div>Home</div>
+            </a>
             <a className={styles.menubutton} href="/menu">
               <div>Menu</div>
             </a>
@@ -32,16 +35,16 @@ export default function index() {
               <div>Reserve a table</div>
             </a>
           </div>
-          <div className={styles.greendot}></div>
+          {/* <div className={styles.greendot}></div> */}
         </div>
 
         <div className={styles.info}>
           <div className={styles.addy}>
             <p>Address ↓</p>
-            <div>
+            <a href="https://www.google.com/maps/dir//510+W+Columbia+Way,+Vancouver,+WA+98660/@45.6238475,-122.7601088,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x5495a900166b6e57:0xb8efcd7ccf34bced!2m2!1d-122.6777082!2d45.6238771?entry=ttu" target="_blank" rel="noopener noreferrer">
               <p>510 W Columbia Way,</p>
               <p>Vancouver, WA 98660</p>
-            </div>
+            </a>
           </div>
 
           <div className={styles.hours}>

@@ -132,7 +132,22 @@
   }
 }
 
+.container {
+
+  .imgwrap {
+    padding: 0rem 10vw 6rem 10vw;
+    box-sizing: border-box;
+
+  }
+}
+
 @media (max-width: 1000px) {
+  .container {
+    .imgwrap {
+      padding: 0rem 2rem 4rem 2rem;
+    }
+  }
+
   .body {
     padding: 2rem;
     height: 74vh;
@@ -209,6 +224,12 @@
 }
 
 @media (max-width: 550px) {
+  .container {
+    .imgwrap {
+      padding: 1rem 1rem 2rem 1rem;
+    }
+  }
+
   .body {
     padding: 1rem;
     margin: 0;

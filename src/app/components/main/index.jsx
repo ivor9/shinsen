@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import styles from './style.module.scss';
+import Carousel from '../carousel';
 import { AnimatePresence, motion } from 'framer-motion';
 import { translate2 } from '../anim.js';
 import Link from 'next/link';
@@ -8,10 +9,13 @@ import Link from 'next/link';
 export default function index() {
 
   return (
-    <div className={styles.body}>
     <AnimatePresence>
+    <div className={styles.container}>
+
+    <div className={styles.body}>
       
       <motion.div initial="initial" animate="enter" variants={translate2} key={index} className={styles.hero}>
+
         <div className={styles.logowrap}>
           <div className={styles.logosec}>
             <div className={styles.shinsen}>
@@ -68,8 +72,17 @@ export default function index() {
           </div>
         </div>
       </motion.div>
-        
-    </AnimatePresence>
+
+
     </div>
+    <motion.div className={styles.imgwrap}
+        initial="initial"
+        animate="enter"
+        variants={translate2}
+      >
+        <Carousel />
+    </motion.div>
+    </div>
+    </AnimatePresence>
   )
 }

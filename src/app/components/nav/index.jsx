@@ -1,15 +1,20 @@
 'use client';
 import React from "react";
 import styles from "./style.module.scss";
+import { translate } from "../anim.js";
+import { AnimatePresence, motion } from 
+"framer-motion";
 
 export default function index() {
 
   return (
-    <div className={styles.container}>
+    <motion.div 
+    initial="initial" animate="enter" variants={translate}
+    className={styles.container}>
       <div className={styles.textwrap}>
         <div className={styles.leftwrap}>
-          <a href='/about'>ABOUT US</a>
           <a href='/menu'>MENU</a>
+          <a href='/about'>ABOUT US</a>
 
         </div>
 
@@ -25,7 +30,7 @@ export default function index() {
 
       <div className={styles.line}>
       </div>
-    </div>
+    </motion.div>
 
   )
 }
