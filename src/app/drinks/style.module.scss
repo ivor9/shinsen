@@ -324,3 +324,19 @@
     }
   }
 }
+
+@media (max-width: 550px) {
+  .container {
+    padding: 0 1rem 4rem 1rem;
+
+    .drinkbutton {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .category {
+    }
+  }
+}
