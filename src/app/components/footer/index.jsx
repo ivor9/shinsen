@@ -28,9 +28,15 @@ export default function index() {
             <a className={styles.homebutton} href="/">
               <div>Home</div>
             </a>
+
+            <a className={styles.menubutton} href="/about">
+              <div>Our story</div>
+            </a>
+
             <a className={styles.menubutton} href="/menu">
               <div>Menu</div>
             </a>
+
             <a className={styles.reservebutton} href="https://www.opentable.com/r/shinsen-sushi-reservations-portland?restref=1362088&lang=en-US&ot_source=Restaurant%20website" target="_blank" rel="noopener noreferrer">
               <div>Reserve a table</div>
             </a>

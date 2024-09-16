@@ -5,12 +5,19 @@
 
   .imgwrap {
     display: flex;
+    position: relative;
     align-items: flex-end;
-    border-radius: 10px;
     aspect-ratio: 16/12;
     height: auto;
     width: 49%;
-    background-color: antiquewhite;
+
+    img {
+      position: relative;
+      object-fit: cover;
+      border-radius: 10px;
+      opacity: 90%;
+      z-index: 1;
+    }
 
     .textwrap {
       display: flex;
@@ -20,7 +27,9 @@
       font-family: pp mori;
       font-size: 1.6rem;
       padding: 1.2rem;
-      color: var(--black); 
+      color: var(--white); 
+      z-index: 2;
+
 
       .text {
         line-height: 1em;

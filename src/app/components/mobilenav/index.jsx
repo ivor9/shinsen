@@ -2,7 +2,7 @@
 import { React, useState } from 'react';
 import styles from "./style.module.scss";
 import { motion, AnimatePresence } from 'framer-motion';
-import { opacity, translate2, height, background } from '../anim.js';
+import { opacity, translate, height, background } from '../anim.js';
 
 
 export default function Index() {
@@ -10,7 +10,7 @@ export default function Index() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <motion.div initial="initial" animate="enter" variants={translate2} div className={styles.container}>
+    <motion.div initial="initial" animate="enter" variants={translate} div className={styles.container}>
       <div onMouseDown={() => {setIsActive(!isActive)}} className={styles.menuwrap}>
         <div className={`${styles.burger} ${isActive ? styles.burgerActive:""}`}>
 

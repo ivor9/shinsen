@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Preloader from './components/preloader';
+import Announcement from './components/announcement';
 import Nav from './components/nav'
 import Mobilenav from './components/mobilenav';
 import Main from './components/main';
@@ -56,6 +57,7 @@ export default function Home() {
             isLoading && <Preloader />
           }
         </AnimatePresence>
+        <Announcement />
         <Nav />
         <Mobilenav />
         <Main />
