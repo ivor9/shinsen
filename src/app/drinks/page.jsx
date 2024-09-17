@@ -313,7 +313,7 @@ export default function Drinks () {
             <div className={styles.itemwrap}>
               <div className={styles.line}></div>
               <div className={styles.itemandprice}>
-                <p className={styles.menuitem}>TYKU JUNMAI PREMIUM <span class="lowercase">(300 ml)</span></p><p className={styles.price}>6 / 12 / 25</p>
+                <p className={styles.menuitem}>TYKU JUNMAI PREMIUM <span className="lowercase">(300 ml)</span></p><p className={styles.price}>6 / 12 / 25</p>
               </div>
               <p className={styles.menudesc}>fresh and balanced taste with subtle pear notes
               </p>
@@ -361,7 +361,7 @@ export default function Drinks () {
               <div className={styles.line}></div>
               <div className={styles.itemandprice}>
 
-                <p className={styles.menuitem}>JOTO YUZU <span class="lowercase">(500 ml)</span></p><p className={styles.price}>8 / - / 35</p>
+                <p className={styles.menuitem}>JOTO YUZU <span className="lowercase">(500 ml)</span></p><p className={styles.price}>8 / - / 35</p>
               </div>
 
               <p className={styles.menudesc}>full-bodied smooth, with fresh herbal finish
