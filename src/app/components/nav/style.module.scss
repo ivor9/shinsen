@@ -7,6 +7,7 @@
   background-color: none;
   padding: 3.6rem 10vw 0 10vw;
   width: 100%;
+  box-sizing: border-box;
   overflow: hidden;
 
   .textwrap {
@@ -23,6 +24,11 @@
       font-family: baskervville;
       font-size: 2.3rem;
       padding-bottom: 4px;
+      transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
+    }
+
+    .logo:hover {
+      opacity: .5;
     }
 
     .leftwrap, .rightwrap {
@@ -33,6 +39,15 @@
       font-size: 1.2rem;
       font-weight: 500;
       gap: 2.2rem;
+
+      a {
+        transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
+
+      }
+
+      a:hover {
+        opacity: .5;
+      }
     }
     .rightwrap {
       justify-content: flex-end;

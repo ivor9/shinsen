@@ -56,8 +56,8 @@ export default function index() {
           <div className={styles.hours}>
             <p>Hours ↓</p>
             <div>
-              <p>4PM — 9PM</p>
-              <p>Wednedsay - Sunday</p>
+              <p>4:30PM — 9PM</p>
+              <p>Tues - Sat</p>
             </div>
           </div>
         </div>

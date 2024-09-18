@@ -24,14 +24,14 @@ export default function index() {
           <div className={styles.fresh1}>&#x2022; Meaning of <span className={styles.fresh2}>fresh</span></div>
           </div>
       
-          <a className={styles.aboutus} href='/about'><div>About us</div><div>↗</div></a>
+          <div className={styles.firstdesc}>Sushi is only as good as its ingredients. Therefore, we import our fish from all over the globe and use top-quality ingredients, as we are committed to providing our customers with nothing but excellence.
+          </div>
         </div>
 
         <div className={styles.about}>
-          <div className={styles.firstdesc}>Sushi is only as good as its ingredients. Therefore, we import our fish from all over the globe and use top-quality ingredients, as we are committed to providing our customers with nothing but excellence.
-          </div>
-          <div className={styles.scnddesc}>Shinsen Sushi & Lounge is a family-owned and operated business that is located by the beautiful Vancouver Waterfront. We welcome you to make memories here with us while enjoying friendly service and the freshest ingredients. 
+          <a className={styles.aboutus} href='/about'><div>About us</div><div>↗</div></a>
 
+          <div className={styles.scnddesc}>Shinsen Sushi & Lounge is a family-owned and operated business that is located by the beautiful Vancouver Waterfront. We welcome you to make memories here with us while enjoying friendly service and the freshest ingredients. 
           </div>
         </div>
       </motion.div>

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from './style.module.scss';
 import Carousel from '../carousel';
 import { AnimatePresence, motion } from 'framer-motion';
+import Image from 'next/image';
 import { translate2 } from '../anim.js';
 import Link from 'next/link';
 
@@ -55,8 +56,8 @@ export default function index() {
           <div className={styles.hours}>
             <p>Hours ↓</p>
             <div>
-              <p>4PM — 9PM</p>
-              <p>Wednesday - Sunday</p>
+              <p>4:30PM — 9PM</p>
+              <p>Tuesday - Saturday</p>
             </div>
           </div>
 
@@ -80,7 +81,12 @@ export default function index() {
         animate="enter"
         variants={translate2}
       >
-        <Carousel />
+        {/* <Carousel /> */}
+        <Image 
+          src="/images/1.webp"
+          fill={true}
+          alt="background"
+        />
     </motion.div>
     </div>
     </AnimatePresence>

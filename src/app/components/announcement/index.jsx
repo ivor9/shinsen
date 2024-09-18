@@ -6,7 +6,8 @@ export default function index() {
 
   return (
     <div className={styles.container}>
-      <p>*Now open for lunch from 12PM - 2:30PM! We are also open for Tuesdays and closed on Sundays.*</p>
+      <p>*Now open for lunch from 12PM - 2:30PM! </p>
+      <p>We are also open Tuesday and closed on Sunday.*</p>
     </div>
 
   )

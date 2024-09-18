@@ -315,12 +315,29 @@
 
     .drinkbutton {
       width: fit-content;
-      margin: 80px 0 0 0;
+      margin: 3rem 0 0 0;
 
     }
 
     .category {
-      padding: 4rem 0 0 0;
+      padding: 2.4rem 0 0 0;
+
+      .title {
+        font-size: 2rem;
+        padding: 0;
+      }
+
+      .itemwrap {
+        .line {
+          margin: 1.4rem 0 1.4rem 0;
+        }
+        .menudesc, .itemandprice {
+          font-size: 1rem;
+          .menuitem{
+            font-size: 1rem;
+          }
+        }
+      }
     }
   }
 }

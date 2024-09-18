@@ -38,7 +38,7 @@ export default function index() {
           </div>
 
           <a className={styles.mapbutton} href="https://www.google.com/maps/dir//510+W+Columbia+Way,+Vancouver,+WA+98660/@45.6238475,-122.7601088,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x5495a900166b6e57:0xb8efcd7ccf34bced!2m2!1d-122.6777082!2d45.6238771?entry=ttu" target="_blank" rel="noopener noreferrer">
-            <div>Google maps</div><div> →</div>
+            <div>Directions</div><div> →</div>
           </a>
         </div>
         

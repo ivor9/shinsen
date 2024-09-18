@@ -1,6 +1,7 @@
 'use client'
 import React from "react";
 import styles from './style.module.scss';
+import Announcement from '../components/announcement';
 import Nav from '../components/nav';
 import Mobilenav from '../components/mobilenav';
 import Image from 'next/image';
@@ -22,6 +23,7 @@ export default function Menu () {
 
   return (
     <main>
+      <Announcement />
       <Mobilenav />
       <Nav />
       <motion.div className={styles.container}

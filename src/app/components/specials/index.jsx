@@ -15,7 +15,7 @@ export default function index() {
       <motion.div initial="initial" animate="enter" variants={translate2} key={index} className={styles.container}>
         <div className={styles.line}></div>
           <div className={styles.content}>
-            <p className={styles.limited}>Limited chef specials.</p>
+            <p className={styles.limited}>Chef special menu</p>
 
             <div className={styles.specials}> 
               <div className={styles.special}>

@@ -45,19 +45,15 @@
         flex-direction: column;
         gap: .85rem;
 
-        .menubutton {
-          width: fit-content;
-          :hover {
-            text-decoration: underline;
-          }
+        a {
+          transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
         }
 
-
-        .reservebutton {
+        a:hover {
+          opacity: .5;
+        }
+        .menubutton, .reservebutton {
           width: fit-content;
-          :hover {
-            text-decoration: underline;
-          }
         }
       }
 

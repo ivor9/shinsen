@@ -8,7 +8,9 @@ import Image from 'next/image';
 export default function index() {
   return (
     <div className={styles.container}>
-      <div className={styles.imgwrap}>
+      <a 
+      href="/menu"
+      className={styles.imgwrap}>
         <div className={styles.textwrap}>
           <div className={styles.text}>SUSHI, SASHIMI, ROLLS</div>
           <div className={styles.text}>↗</div>
@@ -19,9 +21,9 @@ export default function index() {
          fill={true}
          alt="background"
         />
-      </div>
+      </a>
 
-      <div className={styles.imgwrap}>
+      <a href="/drinks" className={styles.imgwrap}>
         <Image 
           src="/images/6.webp"
           fill={true}
@@ -31,7 +33,7 @@ export default function index() {
             <div className={styles.text}>COCKTAILS, SAKE, BEER</div>
             <div className={styles.text}>↗</div>
           </div>
-        </div>
+      </a>
     </div>
   )
 }

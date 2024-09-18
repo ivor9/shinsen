@@ -13,8 +13,8 @@ export default function index() {
     className={styles.container}>
       <div className={styles.textwrap}>
         <div className={styles.leftwrap}>
-          <a href='/menu'>MENU</a>
-          <a href='/about'>ABOUT US</a>
+          <a href='/menu'>Menu</a>
+          <a href='/about'>Our story</a>
 
         </div>
 
@@ -23,8 +23,8 @@ export default function index() {
         </div>
 
         <div className={styles.rightwrap}>
-          <div>RESERVE</div>
-          <div>LOCATION</div>
+          <a href="https://www.opentable.com/r/shinsen-sushi-reservations-portland?restref=1362088&lang=en-US&ot_source=Restaurant%20website" target="_blank" rel="noopener noreferrer">Reserve a table</a>
+          <a>Location</a>
         </div>
       </div>
 

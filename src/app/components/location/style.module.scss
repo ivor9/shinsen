@@ -112,8 +112,8 @@
 
         .mapbutton {
           justify-content: center;
-          padding: 24px 60px 24px 60px;
-          width: 45%;
+          padding: 24px 56px 24px 56px;
+          width: 40%;
 
         }
       }
@@ -128,16 +128,17 @@
     .location {
       font-size: 1.1rem;
     }
-  }
-  .infowrap {
-    .info {
-      .mapbutton {
-        padding: 24px 42px 24px 42px;
-      }
-      .addywrap {
-
-        .address {
-          font-size: 1.1rem;
+    .infowrap {
+      .info {
+        .mapbutton {
+          padding: 24px 52px 24px 52px;
+          width: 50%;
+        }
+        .addywrap {
+  
+          .address {
+            font-size: 1.1rem;
+          }
         }
       }
     }

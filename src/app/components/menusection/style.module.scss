@@ -17,6 +17,7 @@
       border-radius: 10px;
       opacity: 90%;
       z-index: 1;
+      transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
     }
 
     .textwrap {
@@ -35,6 +36,10 @@
         line-height: 1em;
       }
     }
+  }
+
+  img:hover {
+    opacity: .65;
   }
 }
 

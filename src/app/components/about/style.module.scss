@@ -28,16 +28,23 @@
   .aboutwrap {
     display: flex;
     justify-content: space-between;
-    gap: 14vw;
+    flex-direction: column;
+    gap: 4rem;
 
     .story {
       display: flex;
       font-family: pp mori;
       font-size: 1.6rem;
-      gap: .2rem;
-      flex-direction: column;
+      gap: .4rem;
+      flex-direction: row;
       justify-content: space-between;
-      min-width: fit-content;
+
+      .firstdesc {
+        width: 70%;
+        height: fit-content;
+        font-family: baskervville;
+        font-size: 3.4rem;
+      }
 
       .fresh1 {
         font-family: baskerville;
@@ -48,11 +55,23 @@
         font-style: italic;
       }
 
+    }
+
+    .about {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      font-family: pp mori;
+      line-height: 200%;
+      letter-spacing: -.2px;
+
+
       .aboutus {
         display: flex;
         flex-direction: row;
         white-space: nowrap;
         width: fit-content;
+        height: fit-content;
         font-size: 1.2rem;
         font-family: pp mori;
         padding: 24px 68px 24px 68px;
@@ -67,26 +86,12 @@
         background-color: var(--goldhovered);
         color: var(--black);
       }
-    }
-
-    .about {
-      display: flex;
-      flex-direction: column;
-      gap: 6rem;
-      font-size: 1.6rem;
-      font-family: pp mori;
-      
-      // line-height: 200%;
-      letter-spacing: -.2px;
-
-      .firstdesc {
-        margin-top: -8px;
-        font-family: baskervville;
-        font-size: 3.4rem;
-      }
 
       .scnddesc {
         line-height: 170%;
+        font-size: 1.6rem;
+        width: 70%;
+
       }
     }
   }
@@ -97,20 +102,23 @@
 
     
     .aboutwrap {
-      flex-direction: column;
-      gap: 2rem;
-
       .story {
-        flex-direction: row;
-
-        .aboutus {
-          font-size: 1.1rem;
+        flex-direction: column;
+        gap: 2rem;
+        .firstdesc {
+          width: 100%;
         }
+
       }
-
       .about {
-        padding-top: 2rem;
-
+        flex-direction: column-reverse;
+        gap: 4rem;
+        .aboutus {
+          font-size: 1rem;
+        }
+        .scnddesc {
+          width: 100%;
+        }
       }
     }
   }
@@ -123,28 +131,19 @@
     margin-top: 4rem;
     gap: 4rem;
     .aboutwrap {
-
+      gap: 2rem;
       .story {
         font-size: 1.1rem;
-        
         .fresh1 {
           font-size: 1.3rem;
-
         }
-
-        .aboutus {
-          padding: 20px 48px 20px 48px;
-
-
-        }
-      }
-
-      .about {
         .firstdesc {
           font-size: 2.4rem;
           letter-spacing: .2px;
         }
-
+      }
+      .about {
+        gap: 2rem;
         .scnddesc {
           font-size: 1.1rem;
         }
@@ -155,11 +154,25 @@
 
 @media (max-width: 550px) {
   .container {
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem 4rem 1rem;
     gap: 2rem;
 
     .aboutwrap {
-      gap: 2rem;
+      .story {
+        flex-direction: column;
+        gap: 2rem;
+        .firstdesc {
+          font-size: 2rem;
+          letter-spacing: .2px;
+        }
+      }
+
+      .about {
+        gap: 2rem;
+        .scnddesc {
+          font-size: 1.1rem;
+        }
+      }
     }
   }
 }
