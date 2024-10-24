@@ -3,7 +3,7 @@
   box-sizing: border-box;
   overflow: hidden;
   width: 100%;
-  height: 700px;
+  height: 750px;
   align-items: flex-end;
 
   .hero {
@@ -28,7 +28,7 @@
         .shinsen {
           display: flex;
           font-family: baskervville;
-          font-size: 8rem;
+          font-size: 7rem;
 
           .s {
             line-height: 90%;
@@ -58,9 +58,9 @@
           border: 1px var(--white) solid;
           align-items: center;
           justify-content: center;
-          padding: 24px 68px 24px 68px;
+          padding: 24px 54px 24px 54px;
           border-radius: 200px;
-          // background-color: var(--buttongray);
+          background-color: rgb(18, 18, 19, 0.8);
           transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
           cursor: pointer;
         }
@@ -76,7 +76,7 @@
           letter-spacing: -.2px;
           align-items: center;
           justify-content: center;
-          padding: 24px 68px 24px 68px;
+          padding: 24px 54px 24px 54px;
           border-radius: 200px;
           color: var(--black);
           background-color: var(--gold);
@@ -130,26 +130,28 @@
   }
 }
 
+
 .container {
   display: flex;
   flex-direction: column;
   padding: 0 10vw 10rem 10vw;
   gap: 6rem;
+  height: 100vh;
 
   .imgwrap {
     display: flex;
     position: relative;
-    aspect-ratio: 16/12;
-    height: auto;
     width: 100%;
+    left: 0;
+    top: 0;
+    padding: unset;
+    opacity: 50%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    position: absolute;
+    .img {
 
-    img {
-      position: relative;
-      object-fit: cover;
-      border-radius: 10px;
-      opacity: 90%;
-      z-index: 1;
-      transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
     }
   }
 }
@@ -254,14 +256,11 @@
       gap: 4rem;
       .logowrap {
         gap: 4rem;
-
         .logosec {
-
           .sushiwrap {
             padding-right: 2.4rem;
           }
         }
-
         .cta {
           flex-direction: column;
           font-size: 1rem;

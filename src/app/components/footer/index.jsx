@@ -48,7 +48,7 @@ export default function index() {
           <div className={styles.addy}>
             <p>Address ↓</p>
             <a href="https://www.google.com/maps/dir//510+W+Columbia+Way,+Vancouver,+WA+98660/@45.6238475,-122.7601088,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x5495a900166b6e57:0xb8efcd7ccf34bced!2m2!1d-122.6777082!2d45.6238771?entry=ttu" target="_blank" rel="noopener noreferrer">
-              <p>510 W Columbia Way,</p>
+              <p>510 West Columbia Way,</p>
               <p>Vancouver, WA 98660</p>
             </a>
           </div>
@@ -64,8 +64,14 @@ export default function index() {
       </div>
 
       <div className={styles.credits}>
-        <p>All rights reserved.</p>
-        <div className={styles.shinsen}>© ShinSen 2024</div>
+        <div>
+          <p>All rights reserved.</p>
+          <p className={styles.by}>Made with love by <a href="" target='blank'>Ivor Jian ↗</a></p>
+        </div>
+        <div className={styles.shinsen}>
+          <div>© ShinSen 2024</div>
+          <p>Photography by <a href="https://www.ninogortiz.com/" target='blank'>Nino Ortiz ↗</a></p>
+        </div>
       </div>
     </div>
   )

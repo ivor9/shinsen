@@ -213,16 +213,25 @@
   display: flex;
   height: fit-content;
   width: 100%;
+  flex-direction: column;
   // gap: 2vw;
   justify-content: space-around;
   padding: 0 10vw 9rem 10vw;
   box-sizing: border-box;
+
+  .newmenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    width: 100%;
+  }
 
   .drinkbutton {
     white-space: nowrap;
     margin-top: 140px;
     margin-right: 2rem;
     height: fit-content;
+    width: fit-content;
     padding: 24px 68px 24px 68px;
     border: solid 1px var(--gold);
     border-radius: 200px;
@@ -313,6 +322,12 @@
     justify-content: unset;
     flex-direction: column;
 
+  .newmenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+  }
     .drinkbutton {
       width: fit-content;
       margin: 3rem 0 0 0;

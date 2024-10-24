@@ -24,7 +24,7 @@ export default function index() {
 
         <div className={styles.rightwrap}>
           <a href="https://www.opentable.com/r/shinsen-sushi-reservations-portland?restref=1362088&lang=en-US&ot_source=Restaurant%20website" target="_blank" rel="noopener noreferrer">Reserve a table</a>
-          <a>Location</a>
+          <a>Contact</a>
         </div>
       </div>
 

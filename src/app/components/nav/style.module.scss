@@ -9,7 +9,7 @@
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-
+  z-index: 2;
   .textwrap {
     display: flex;
     height: fit-content;
@@ -36,7 +36,7 @@
       min-width: 270px;
       align-items: center;
       font-family: pp mori;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: 500;
       gap: 2.2rem;
 

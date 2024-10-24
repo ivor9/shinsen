@@ -17,15 +17,15 @@ export default function index() {
         </div>
 
         <Image 
-         src="/images/chirashi.jpg"
+         src="/images/me.jpg"
          fill={true}
          alt="background"
         />
       </a>
 
       <a href="/drinks" className={styles.imgwrap}>
-        <Image 
-          src="/images/6.webp"
+        <Image
+          src="/images/drinksmoke.jpg"
           fill={true}
           alt="background"
         />

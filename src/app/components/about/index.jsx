@@ -17,6 +17,7 @@ export default function index() {
       <motion.div className={styles.aboutwrap}
             initial="initial"
             whileInView="enter"
+            viewport={{once:true}}
             variants={translate}
       >
         <div className={styles.story}>
@@ -24,7 +25,7 @@ export default function index() {
           <div className={styles.fresh1}>&#x2022; Meaning of <span className={styles.fresh2}>fresh</span></div>
           </div>
       
-          <div className={styles.firstdesc}>Sushi is only as good as its ingredients. Therefore, we import our fish from all over the globe and use top-quality ingredients, as we are committed to providing our customers with nothing but excellence.
+          <div className={styles.firstdesc}>An intimate dining experience where modern elegance meets traditional Japanese cuisine.
           </div>
         </div>
 

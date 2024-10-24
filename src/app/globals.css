@@ -18,12 +18,14 @@
 }
 
 :root {
-  --white: #E7E7EB;
-  --black: #161618;
+  --white: #dcdad4;
+  --black: #0d0d0e;
   --gold: #CBAA56;
   --goldhovered: #FFD465;
   --green: #65946C;
   --buttongray: #212124;
+  --buttontrans: transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,9 +42,8 @@
 
 body {
   color: var(--white);
-  background-color: var(--black);
   height: 100%;
-  background: linear-gradient(160deg, #29324d 0%, #20232e 100%);
+  background: var(--black);
   background-attachment: fixed;
   box-sizing: border-box;
 }
@@ -51,7 +52,7 @@ p {
   font-family: pp mori;
   -webkit-font-smoothing: antialiased;
   color: var(--white);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
 }

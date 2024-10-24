@@ -6,7 +6,7 @@
   height: fit-content;
   width: 100%;
   padding: 0 10vw 9rem 10vw;
-
+  border-radius: 14px 14px 0 0;
 
   .copywrap {
     display: flex;
@@ -96,9 +96,18 @@
     display: flex;
     justify-content: space-between;
 
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: .85rem;
+      a:hover {
+        text-decoration: underline;
+      }
+    }
     .shinsen {
+      align-items: end;
       font-family: baskervville;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
 }

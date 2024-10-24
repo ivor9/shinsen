@@ -1,6 +1,6 @@
 'use client';
 import styles from './style.module.scss';
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import React from 'react';
 import { slideUp, slideDown, background, opacity } from './anim';
 
@@ -11,7 +11,7 @@ export default function index () {
   return (
     <motion.div key={index} variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
       <div className={styles.logowrap}>
-        <motion.p variants={opacity} initial="initial" animate="enter" key={index} className={styles.shinsen}>ShinSen</motion.p>
+        <motion.p variants={opacity} viewport={{ once: true }} initial="initial" animate="enter" key={index} className={styles.shinsen}>ShinSen</motion.p>
 
         <p className={styles.lounge}>
           {

@@ -57,13 +57,13 @@ export default function Home() {
             isLoading && <Preloader />
           }
         </AnimatePresence>
-        <Announcement />
+        {/* <Announcement /> */}
         <Nav />
         <Mobilenav />
         <Main />
+        <About />
         <Specials />
         <Menusection />
-        <About />
         <Location />
         <Footer />
       </div>

@@ -3,7 +3,30 @@
   // display: flex;
   overflow: hidden;
 }
+.imgcontainer {
+  display: flex;
+  padding: 6rem 0 0 0;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.imgwrap2 {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  align-items: flex-end;
+  overflow: hidden;
+
+  img {
+    position: relative;
+    scale: 1.2;
+
+  }
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -26,18 +49,10 @@
     width: 100%;
     height: 2px;
     background-color: var(--gold);
-    margin-top: 9rem;
+    margin-top: 6rem;
   }
 
-  .imgwrap {
-    display: flex;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    border-radius: 10px;
-    background-color: black;
-  }
-  
+
   .aboutsec {
     display: flex;
     justify-content: space-between;
@@ -58,11 +73,17 @@
 
     .imgwrap {
       display: flex;
+      position: relative;
       border-radius: 10px;
-      aspect-ratio: 16/12;
+      aspect-ratio: 16/11;
       height: auto;
       width: 49%;
+      object-fit: fill;
       background-color: antiquewhite;
+      img {
+      border-radius: 10px;
+
+      }
     }
   }
 
@@ -70,7 +91,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
+    .colimg {
+      display: flex;
+      position: relative;
+      border-radius: 10px;
+      aspect-ratio: 16/12;
+      height: auto;
+      width: 49%;
+    }
     .drinkcol {
       display: flex;
       flex-direction: column;
@@ -78,29 +107,40 @@
       width: 45%;
 
       .drinkbutton{
+        display: flex;
         white-space: nowrap;
         width: fit-content;
         font-size: 1.2rem;
+        gap: 12px;
         font-family: pp mori;
-        padding: 24px 68px 24px 68px;
+        padding: 24px 60px 24px 68px;
         border: solid 1px var(--gold);
         border-radius: 200px;
+        transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
+
+        &:hover {
+          background-color: var(--goldhovered);
+          color: var(--black);
+        }
       }
     }
   }
 
   .aboutsec p:nth-of-type(2),.drinks p:nth-of-type(1)
   ,.end p:nth-child(2) {
-    font-size: 2.6vw;
+    font-size: 2.2vw;
   }
 
   .colimg {
     display: flex;
+    position: relative;
     border-radius: 10px;
     aspect-ratio: 16/12;
     height: auto;
     width: 49%;
-    background-color: antiquewhite;
+    img {
+      border-radius: 10px;
+    }
   }
 
   .end {
@@ -119,7 +159,7 @@
 
 .inftextcontainer {
   position: absolute;
-  padding: 4rem 0 0rem 0;
+  // padding: 0rem 0 2rem 0;
 
   .inftext {
     display: flex;
@@ -151,6 +191,9 @@
 
 
 @media (max-width: 1000px) {
+  .imgcontainer {
+    padding-top: 4rem;
+  }
   .container {
     padding: 4rem 2rem 0 2rem;
     gap: 4rem;
@@ -176,22 +219,18 @@
       }
     }
   }
-
-  .inftextcontainer {
-    padding: 3rem 0 0rem 0;
-  }
-
-
-
 }
 
 @media (max-width: 550px) {
+  .imgcontainer {
+    padding-top: 2rem;
+  }
   .container {
     padding: 1rem;
     gap: 2rem;
 
     .line1 {
-      margin-top: 5rem;
+      margin-top: 4rem;
     }
 
     .aboutsec {
@@ -250,7 +289,6 @@
   }
 
   .inftextcontainer {
-    padding: 1rem 0 1rem 0;
     .inftext p{
       font-size: 2rem;
       word-spacing: 1rem;

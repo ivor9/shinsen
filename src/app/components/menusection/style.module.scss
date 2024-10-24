@@ -1,5 +1,5 @@
 .container {
-  padding: 6rem 10vw 6rem 10vw;
+  padding: 10rem 10vw 10rem 10vw;
   display: flex;
   justify-content: space-between;
 
@@ -10,14 +10,20 @@
     aspect-ratio: 16/12;
     height: auto;
     width: 49%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 1s cubic-bezier(0.065, 0.82, 0.165, .96);
+
 
     img {
       position: relative;
       object-fit: cover;
       border-radius: 10px;
       opacity: 90%;
+      aspect-ratio: 16/12;
+
       z-index: 1;
-      transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
+      scale: 1.1;
     }
 
     .textwrap {
@@ -31,15 +37,17 @@
       color: var(--white); 
       z-index: 2;
 
-
       .text {
         line-height: 1em;
+        text-shadow: 1px 2px 5px rgba(0,0,0,0.45);
+
       }
     }
   }
 
-  img:hover {
-    opacity: .65;
+  .imgwrap:hover {
+    opacity: .85;
+    scale: .99;
   }
 }
 

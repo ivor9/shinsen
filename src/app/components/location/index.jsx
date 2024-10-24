@@ -23,7 +23,7 @@ export default function index() {
         
         <div className={styles.imgwrap}>
           <Image 
-            src={`/images/8.webp`}
+            src={`/images/location.jpg`}
             fill={true}
             alt="image"
           />
@@ -31,7 +31,7 @@ export default function index() {
 
         <div className={styles.info}>
           <div className={styles.addywrap}>
-            <div className={styles.address}>510 W Columbia Way
+            <div className={styles.address}>510 West Columbia Way
             </div>
             <div className={styles.address}>
             Vancouver, WA 98660</div>

@@ -13,7 +13,7 @@
   // margin: -24svh 0 6rem 0;
   width: 100%;
   gap: 4rem;
-  padding: 0 10vw 4rem 10vw;
+  padding: 0 10vw 10rem 10vw;
   
   .imgwrap {
     // display: flex;
@@ -72,7 +72,7 @@
         white-space: nowrap;
         width: fit-content;
         height: fit-content;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-family: pp mori;
         padding: 24px 68px 24px 68px;
         border: solid 1px var(--gold);
@@ -171,6 +171,11 @@
         gap: 2rem;
         .scnddesc {
           font-size: 1.1rem;
+        }
+        .aboutus {
+          justify-content: center;
+          padding: 24px 52px 24px 52px;
+          width: 100%;
         }
       }
     }

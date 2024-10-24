@@ -155,8 +155,7 @@ export default function Menu () {
               <div className={styles.itemandprice}>
                 <p className={styles.menuitem}>BIG EYE TUNA</p><p className={styles.price}>12/22</p>
               </div>
-              <p className={styles.menudesc}>assorted sashimi over seasoned rice, with soy glaze *choice of sashimi are subject to change*
-              </p>
+    
             </div>
 
             <div className={styles.itemwrap}>

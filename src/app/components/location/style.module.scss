@@ -37,7 +37,7 @@
       }
       .address {
         font-family: pp mori;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         letter-spacing: -.3px;
         min-width: 15vw;
         max-width: 15vw;
@@ -48,6 +48,7 @@
         display: flex;
         white-space: nowrap;
         width: fit-content;
+        font-size: 1.2rem;
         font-family: pp mori;
         padding: 24px 68px 24px 68px;
         border: solid 1px var(--white);
@@ -130,9 +131,11 @@
     }
     .infowrap {
       .info {
+        flex-direction: column;
+        align-items: flex-start;
         .mapbutton {
           padding: 24px 52px 24px 52px;
-          width: 50%;
+          width: 100%;
         }
         .addywrap {
   

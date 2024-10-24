@@ -6,6 +6,7 @@ import Footer from '../components/footer';
 import { translate } from '../components/anim.js';
 import Nav from '../components/nav';
 import Mobilenav from '../components/mobilenav';
+import Announcement from '../components/announcement';
 import gsap from 'gsap';
 
 import { AnimatePresence, whileInView, motion } from "framer-motion"
@@ -41,20 +42,29 @@ export default function About () {
   }
 
   return (
-  
+    
     <motion.div
       initial={{y: 0,
         opacity: 0}}
       whileInView="enter"
       variants={translate}
       className={styles.main}
-    >
+    > <Announcement />
       <Nav />
       <Mobilenav />
 
-      <div className={styles.container}>
-        <div className={styles.imgwrap}>
+        <div className={styles.imgcontainer}>
+
+          <div className={styles.imgwrap2}>
+            <Image data-scroll data-scroll-speed="-.12"
+                src={`/images/wow.jpg`}
+                fill={true}
+                objectFit="cover"
+                alt="image"
+            />
+          </div>
         </div>
+      <div className={styles.container}>
       </div>
 
       <div className={styles.inftextcontainer}>
@@ -76,8 +86,22 @@ export default function About () {
         </div>
 
         <div className={styles.doubleimgwrap}>
-          <div className={styles.imgwrap}></div>
-          <div className={styles.imgwrap}></div>
+          <div className={styles.imgwrap}>
+            <Image 
+                src={`/images/chef.jpg`}
+                fill={true}
+                objectFit="fill"
+                alt="image"
+              />
+          </div>
+          <div className={styles.imgwrap}>
+          <Image 
+                src={`/images/din.jpg`}
+                fill={true}
+                objectFit="fill"
+                alt="image"
+              />
+          </div>
         </div>
 
         <div className={styles.line}></div>
@@ -85,13 +109,27 @@ export default function About () {
         <div className={styles.drinks}>
           <div className={styles.drinkcol}>
             <p>We also offer a curated selection of handcrafted cocktails and premium sakes, complementing your sushi. </p>
-            <div className={styles.drinkbutton}>View drinks</div>
+            <a href='/drinks'className={styles.drinkbutton}>Drink menu<span>→</span></a>
           </div>
-          <div className={styles.colimg}></div>
+          <div className={styles.colimg}>
+            <Image 
+                  src={`/images/sick.jpg`}
+                  fill={true}
+                  objectFit="fill"
+                  alt="image"
+                />
+          </div>
         </div>
 
         <div className={styles.end}>
-          <div className={styles.colimg}></div>
+          <div className={styles.colimg}>
+          <Image 
+                src={`/images/lobby.jpg`}
+                fill={true}
+                objectFit="cover"
+                alt="image"
+              />
+          </div>
           <p>Whether you’re celebrating a special occasion or simply indulging in a night out, we invite you to savor the essence of freshness in a sophisticated and inviting atmosphere.</p>
         </div>
       </div>
