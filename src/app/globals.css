@@ -48,7 +48,7 @@ body {
   box-sizing: border-box;
 }
 
-p {
+p, a {
   font-family: pp mori;
   -webkit-font-smoothing: antialiased;
   color: var(--white);
