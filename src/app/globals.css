@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: pp mori;
+  src:
+  url('../../public/fonts/PPMori-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: baskervville;
+  src: url('../../public/fonts/Baskervville-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --white: #dcdad4;
+  --black: #0d0d0e;
+  --gold: #CBAA56;
+  --goldhovered: #FFD465;
+  --green: #65946C;
+  --buttongray: #212124;
+  --buttontrans: transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.container {
+  font-family: pp mori;
+}
+
+body {
+  color: var(--white);
+  height: 100%;
+  background: var(--black);
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: pp mori;
+  -webkit-font-smoothing: antialiased;
+  color: var(--white);
+  font-size: 1.3rem;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+@media (max-width: 550px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+

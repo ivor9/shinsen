@@ -1,0 +1,76 @@
+.container {
+  padding: 10rem 10vw 10rem 10vw;
+  display: flex;
+  justify-content: space-between;
+
+  .imgwrap {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    aspect-ratio: 16/12;
+    height: auto;
+    width: 49%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 1s cubic-bezier(0.065, 0.82, 0.165, .96);
+
+
+    img {
+      position: relative;
+      object-fit: cover;
+      border-radius: 10px;
+      opacity: 90%;
+      aspect-ratio: 16/12;
+
+      z-index: 1;
+      scale: 1.1;
+    }
+
+    .textwrap {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: fit-content;
+      font-family: pp mori;
+      font-size: 1.6rem;
+      padding: 1.2rem;
+      color: var(--white); 
+      z-index: 2;
+
+      .text {
+        line-height: 1em;
+        text-shadow: 1px 2px 5px rgba(0,0,0,0.45);
+
+      }
+    }
+  }
+
+  .imgwrap:hover {
+    opacity: .85;
+    scale: .99;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 4rem 2rem 4rem 2rem;
+
+    .imgwrap {
+
+      .textwrap {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 2rem 1rem 2rem 1rem;
+    flex-direction: column;
+    gap: 2rem;
+    .imgwrap {
+      width: 100%;
+    }
+  }
+}

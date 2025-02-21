@@ -1,0 +1,183 @@
+@font-face {
+  font-family: pp mori;
+  src:
+  url('/shinsen/public/fonts/PPMori-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  // margin: -24svh 0 6rem 0;
+  width: 100%;
+  gap: 4rem;
+  padding: 0 10vw 10rem 10vw;
+  
+  .imgwrap {
+    // display: flex;
+    // position: relative;
+    // box-sizing: border-box;
+    // max-width: 100%;
+    // height: 50vw;
+    // border-radius: 14px;
+    
+  }
+
+  .aboutwrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 4rem;
+
+    .story {
+      display: flex;
+      font-family: pp mori;
+      font-size: 1.6rem;
+      gap: .4rem;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .firstdesc {
+        width: 70%;
+        height: fit-content;
+        font-family: baskervville;
+        font-size: 3.4rem;
+      }
+
+      .fresh1 {
+        font-family: baskerville;
+        font-size: 1.6rem;
+      }
+      .fresh2 {
+        font-family: baskerville;
+        font-style: italic;
+      }
+
+    }
+
+    .about {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      font-family: pp mori;
+      line-height: 200%;
+      letter-spacing: -.2px;
+
+
+      .aboutus {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        width: fit-content;
+        height: fit-content;
+        font-size: 1.3rem;
+        font-family: pp mori;
+        padding: 24px 68px 24px 68px;
+        border: solid 1px var(--gold);
+        border-radius: 200px;
+        gap: 12px;
+        transition: all .4s cubic-bezier(0.065, 0.82, 0.165, .96);
+        cursor: pointer;
+      }
+      
+      .aboutus:hover {
+        background-color: var(--goldhovered);
+        color: var(--black);
+      }
+
+      .scnddesc {
+        line-height: 170%;
+        font-size: 1.6rem;
+        width: 70%;
+
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+
+    
+    .aboutwrap {
+      .story {
+        flex-direction: column;
+        gap: 2rem;
+        .firstdesc {
+          width: 100%;
+        }
+
+      }
+      .about {
+        flex-direction: column-reverse;
+        gap: 4rem;
+        .aboutus {
+          font-size: 1rem;
+        }
+        .scnddesc {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 2rem 2rem 0 2rem;
+    margin-top: 4rem;
+    gap: 4rem;
+    .aboutwrap {
+      gap: 2rem;
+      .story {
+        font-size: 1.1rem;
+        .fresh1 {
+          font-size: 1.3rem;
+        }
+        .firstdesc {
+          font-size: 2.4rem;
+          letter-spacing: .2px;
+        }
+      }
+      .about {
+        gap: 2rem;
+        .scnddesc {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 0 1rem 4rem 1rem;
+    gap: 2rem;
+
+    .aboutwrap {
+      .story {
+        flex-direction: column;
+        gap: 2rem;
+        .firstdesc {
+          font-size: 2rem;
+          letter-spacing: .2px;
+        }
+      }
+
+      .about {
+        gap: 2rem;
+        .scnddesc {
+          font-size: 1.1rem;
+        }
+        .aboutus {
+          justify-content: center;
+          padding: 24px 52px 24px 52px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
