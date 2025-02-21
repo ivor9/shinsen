@@ -16,7 +16,7 @@ export default function index() {
     <div className={styles.container}>
       <div className={styles.copywrap}>
         <div className={`${styles.text} ${baskervville.className}`}>
-          Come have a drink & savor excellent sushi with us at ShinSen Sushi & Lounge!
+          Come have a drink & savor excellent sushi with us at Shinsen Sushi & Lounge!
         </div>
       </div>
 
@@ -69,7 +69,7 @@ export default function index() {
           <p className={styles.by}>Site by <a href="https://www.ivorjian.com/" target='blank'>Ivor Jian.</a></p>
         </div>
         <div className={styles.shinsen}>
-          <div>© ShinSen 2024</div>
+          <div>© Shinsen 2024</div>
           <p>Photography by <a href="https://www.ninogortiz.com/" target='blank'>Nino Ortiz</a></p>
         </div>
       </div>

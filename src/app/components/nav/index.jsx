@@ -19,7 +19,7 @@ export default function index() {
         </div>
 
         <div className={styles.logo}>
-          <a href="/">ShinSen</a>
+          <a href="/">Shinsen</a>
         </div>
 
         <div className={styles.rightwrap}>

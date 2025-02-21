@@ -30,7 +30,7 @@ export default function index() {
           <div className={styles.logowrap}>
             <div className={styles.logosec}>
               <div className={styles.shinsen}>
-                <div className={styles.s}>ShinSen</div>
+                <div className={styles.s}>Shinsen</div>
 
               </div>
 
