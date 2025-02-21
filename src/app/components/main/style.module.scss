@@ -52,11 +52,11 @@
         font-family: pp mori;
         font-size: 1.1rem;
         width: 100%;
-
+        gap: .6rem;
         .menubutton {
           display: flex;
           letter-spacing: -.2px;
-          border: 1px var(--white) solid;
+          border: 1px rgb(120, 120, 120) solid;
           align-items: center;
           justify-content: center;
           padding: 24px 54px 24px 54px;
